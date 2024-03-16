@@ -14,6 +14,8 @@
 - npm install multer
 - npm install express
 - npm install ejs
+  ![Uploading image.png…]()
+
 
 
 localhost:3000
