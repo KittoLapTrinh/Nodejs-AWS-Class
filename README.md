@@ -1,5 +1,21 @@
 # Nodejs-AWS-GK
 # CRUD
+1. node -v
+2. Tạo một folder vd: cnm_lab04_mvc
+- Mở folder trên vscode, mở terminal của vscode bằng phím tắt: Ctrl + Shift + `
+- Nhập: npm init -y
+- Them "start": "nodemon index.js"
+
+# pip install lib
+- npm install node
+- npm install nodemon
+- npm install aws-sdk
+- npm install dotenv
+- npm install multer
+- npm install express
+- npm install ejs
+
+
 localhost:3000
 ![image](https://github.com/KittoLapTrinh/Nodejs-AWS-GK/assets/96908923/0e6c8fdb-9ceb-4388-9c45-2b3c161a1961)
 
