@@ -14,7 +14,8 @@
 - npm install multer
 - npm install express
 - npm install ejs
-  ![Uploading image.png…]()
+  ![image](https://github.com/KittoLapTrinh/Nodejs-AWS-GK/assets/96908923/e02ea8b8-f697-41a6-8d63-a103ad1ca260)
+
 
 
 
