@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../views/index.css">
+    <title>Bai Tap On GK</title>
+</head>
+<body>
+    <div class="container">
+        <h1>THONG TIN LOP HOC</h1>
+        <form action="/save"  method="post"  enctype="multipart/form-data">
+            <input  type="text" name="maMonHoc" id="maMonHoc" placeholder="Nhap ma Mon Hoc"/>
+            <br/>
+            <input  type="text" name="tenMonHoc" id="tenMonHoc" placeholder="Nhap ten Mon Hoc"/>
+            <br/>
+            <input  type="text" name="hocKy" id="hocKy" placeholder="Nhập Học Kỳ"/>
+            <br/>
+            <input  type="text" name="khoaNganh" id="khoaNganh" placeholder="Nhap Khoa Ngành"/>
+            <br/>
+            <input  type="file" name="image" id="image" accept="image/*"/>
+            <br>
+            <input type="submit" value="Them"/>
+            <br/>
+
+        </form>
+        <form action="/delete" method="post" enctype="multipart/form-data">
+            <table border="true">
+                <tr>
+                    <th>Mã Môn Học</th>
+                    <th>Tên Môn Học</th>
+                    <th>Học Kỳ</th>
+                    <th>Khoa Nghành</th>
+                    <th>Hình Ảnh</th>
+                    <th>Chọn</th>
+                </tr>
+                <% for(let i = 0; i < data.length; i++){ %>
+                    <tr>
+                        <td>
+                            <%= data[i].maMonHoc %>
+                        </td>
+                        
+                        <td>
+                            <%= data[i].tenMonHoc %>
+                        </td>
+                        
+                        <td>
+                            <%= data[i].hocKy %>
+                        </td>
+                        
+                        <td>
+                            <%= data[i].khoaNganh %>
+                        </td>
+                        
+                        <td>
+                            <img src="<%= data[i].image %>" alt="avt_<%= data[i].maMonHoc %>" width="100" height="100"/>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="<%= data[i].maMonHoc %>" id="<%= data[i].maMonHoc %>"/>
+                        </td>
+                    </tr>
+                <% } %>
+            </table>
+            <input type="submit" value="Xoa">
+        </form>
+    </div>
+    
+</body>
+</html>
