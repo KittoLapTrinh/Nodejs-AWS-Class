@@ -5,6 +5,7 @@
 - Mở folder trên vscode, mở terminal của vscode bằng phím tắt: Ctrl + Shift + `
 - Nhập: npm init -y
 - Them "start": "nodemon index.js"
+# npm i ejs nodemon express
 
 # pip install lib
 - npm install node
