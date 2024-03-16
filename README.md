@@ -1,4 +1,5 @@
 # Nodejs-AWS-GK
+# CRUD
 localhost:3000
 ![image](https://github.com/KittoLapTrinh/Nodejs-AWS-GK/assets/96908923/0e6c8fdb-9ceb-4388-9c45-2b3c161a1961)
 
